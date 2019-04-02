@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị lớn nhất trong mảng</title>
+</head>
+<body>
+<script>
+    let x = [2,5,9,8,6,-3,14,18,-23,10,7,4];
+    let max = x[0];
+    let index = 0;
+    for (let i = 0; i < x.length; i++)
+    {
+        if (x[i] > max)
+        {
+            max = x[i];
+            index = i;
+        }
+    }
+    alert("max: " + max + " at position " + index);
+</script>
+</body>
+</html>
